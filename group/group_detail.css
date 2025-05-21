@@ -38,6 +38,15 @@ main{
     border: 2px solid black;
 }
 
+.container-infos{
+    height: 100px;
+    background-color: blue;
+}
+
+.container-card{
+    display: none;
+}
+
 
 @media screen and (min-width:780px) and (max-width:1279px) {
 
@@ -60,6 +69,13 @@ main{
 
     .swiper{
         width: 80%;
+    }
+
+    .container-card{
+        height: 100px;
+        width: 100%;
+        background-color: red;
+        display: flex;
     }
     
 }
