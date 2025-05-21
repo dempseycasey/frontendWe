@@ -109,10 +109,11 @@ form input{
     height: 150px;
 }
 
-@media screen and (min-width:779px) {
+@media screen and (max-width:779px) {
 
     .container-search-bar .search-bar{
-        width: 50%;
+        width: 80%;
+        background-color: red;
     }
 
     
