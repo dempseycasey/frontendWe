@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    height: 70px;
+    background-color: red;
+}
+
+.container-first{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    box-sizing: border-box;
+    padding-top: 100px;
+}
+
+.container-cta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "DM Sans", sans-serif;
+}
+
+.container-cta span.cta{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    border: 1px solid #252525;
+    padding: 5px;
+}
+
+.container-subtitle .subtitle{
+    font-size: 20px;
+    font-family: "DM Sans", sans-serif;
+    color: #364153;
+}
+
+.container-title .title{
+    font-size: 40px;
+    font-family: "DM Sans", sans-serif;
+    color: #252525;
+}
+
+.container-btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.container-btns a{
+    border: 1px solid black;
+    padding: 12px;
+    text-decoration: none;
+    font-family: "DM Sans", sans-serif;
+    display: inline-flex;
+    gap: 10px;
+}
+
+@media screen and (min-width:375px) and (max-width:779px) {
+
+    .container-first{
+        gap: 10px;
+        padding-top: 75px;
+    }
+
+    .container-cta{
+    }
+    
+    .container-cta span.cta{
+        font-size: 10px;
+    }
+
+
+    .container-subtitle .subtitle{
+        font-size: 14px;
+        background-color: red;
+    }
+
+    .container-title .title{
+        font-size: 22px;
+    }
+
+    .container-btns{
+        margin-top: 20px;
+    }
+
+    .container-btns a{
+        background-color: #252525;
+        color: white;
+        text-decoration: none;
+        font-size: 14px;
+        padding: 10px;
+    }
+}

@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "DM Sans", sans-serif;
+}
+
+header{
+    position: sticky;
+    z-index: 200;
+    top: 0;
+    left: 0;
+}
+
+nav{
+    height: 70px;
+    width: 100%;
+    background-color: rgb(255, 0, 0);
+}
+
+aside{
+    height: 100vh;
+    width: 250px;
+    background-color: rgba(0, 0, 248, 0.986);
+    position: fixed;
+    top: 70px;
+    right: 0px;
+}
+
+.title{
+    font-size: 50px;
+    color: #252525;
+}
+
+.subtitle{
+    font-size: 20px;
+    color: #525252;
+}
+
+main{
+    width: calc(100% - 250px);
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 75px;
+}
+
+section{
+    width: 70%;
+    box-sizing: border-box;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.container-text{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.container-input{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.container-input input{
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+textarea{
+    padding: 15px;
+    border-radius: 10px;
+
+}
+
+
+#video{
+    display: none;
+}
+
+.label-file{
+    margin-bottom: 10px;
+}
+
+label[for='images']{
+    display: flex;
+    height: 100px;
+    border: 2px dashed #252525;
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+label[for='images']:hover{
+    background-color: #252525;
+    color: white;
+}
+
+label svg{
+    height: 40px;
+}
+
+.container-btn{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.container-btn a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #252525;
+    padding: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    
+}
+
+.container-files{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container-video{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+
+@media screen and (max-width:779px) {
+
+    aside{
+        display: none;
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+
+    main{
+        padding: 0px;
+        width: 100%;
+    }
+
+    main section{
+        padding: 15px;
+        width: 100%;
+    }
+
+
+    main section form{
+        width: 100%;
+    }
+
+    .title{
+        font-size: 30px;
+    }
+
+    label[for='images']{
+        width: 80px;
+        height: 80px;
+    }
+}
