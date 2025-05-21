@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 100%;
+}
+
+
+aside{
+    height: 100vh;
+    width: 400px;
+    background:rgb(255, 0, 0);
+    position: fixed;
+    top: 0;
+    right: 0;
+
+}
+
+main{
+    width: calc(100% - 400px);
+    background-color: blue;
+    height: 10px;
+}
+
+.container-swiper{
+    height: 600px;
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper{
+    height: 500px;
+    width: 800px;
+    border: 2px solid black;
+}
+
+
+@media screen and (min-width:780px) and (max-width:1279px) {
+
+    .swiper{
+        height: 80%;
+        width: 80%;
+    }
+    
+}
+
+
+@media screen and (max-width:779px) {
+    aside{
+        display: none;
+    }
+
+    main{
+        width: 100%;
+    }
+
+    .swiper{
+        width: 80%;
+    }
+    
+}
