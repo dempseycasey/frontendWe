@@ -104,7 +104,7 @@ form input{
 }
 
 .card{
-    width: 250px;
+    width: 300px;
     border: 1px solid black;
     height: 150px;
 }
@@ -113,7 +113,9 @@ form input{
 
     .container-search-bar .search-bar{
         width: 80%;
-        background-color: red;
+    }
+    .card{
+        width: 90%;
     }
 
     
