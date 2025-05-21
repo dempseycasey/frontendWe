@@ -12,6 +12,23 @@ aside{
     left: 0;
     box-sizing: border-box;
     padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.btn-back{
+    padding: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    box-sizing: border-box;
+    gap: 5px;
+    font-family: "DM Sans", sans-serif;
+    color: black;
+    text-decoration: none;
+
 }
 
 .container-card{
@@ -59,4 +76,10 @@ aside{
 .link:hover{
     background: #252525;
     color: whitesmoke;
+}
+
+@media screen and (max-width:779px) {
+    aside{
+        display: none;
+    }
 }
