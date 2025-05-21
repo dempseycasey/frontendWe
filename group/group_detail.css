@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -11,22 +13,75 @@ body{
 aside{
     height: 100vh;
     width: 400px;
-    background:rgb(255, 0, 0);
     position: fixed;
     top: 0;
     right: 0;
+    box-sizing: border-box;
+    padding: 15px;
 
 }
 
+.container-card-group{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    margin-top: 50px;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.container-img{
+    height: 150px;
+    background-color: red;
+    border-radius: 5px;
+}
+
+.container-title span{
+    font-family: "DM Sans", sans-serif;
+    font-weight: bold;
+}
+
+.container-description{
+    font-family: "DM Sans", sans-serif;
+}
+
+.container-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-btn a{
+    width: 100%;
+    padding: 8px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: "DM Sans", sans-serif;
+    text-decoration: none;
+}
+
+
+
+
 main{
     width: calc(100% - 400px);
-    background-color: blue;
-    height: 10px;
+}
+
+.container-main-title{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.container-main-title .main-title{
+    margin-left: 30px;
+    font-size: 50px;
+    font-family: "DM Sans", sans-serif;
 }
 
 .container-swiper{
     height: 600px;
-    background-color: green;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -39,13 +94,58 @@ main{
 }
 
 .container-infos{
-    height: 100px;
-    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    font-family: "DM Sans", sans-serif;
+    flex-wrap: wrap;
+}
+
+.info-user{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+}
+
+.pp{
+    height: 25px;
+    width: 25px;
+    background: red;
+    border-radius: 5px;
 }
 
 .container-card{
     display: none;
 }
+
+.container-btns{
+    display: flex;
+    gap: 20px;
+}
+
+.container-btns a{
+    color: black;
+    text-decoration: none;
+    font-family: "DM Sans", sans-serif;
+    font-size: 20px;
+}
+
+.container-btns a:first-child {
+  margin-left: 25px;
+}
+
+.container-dynamic{
+    width: 100%;
+    margin-top: 20px;
+    box-sizing: border-box;
+    padding: 30px;
+    font-family: "DM Sans", sans-serif;
+}
+
 
 
 @media screen and (min-width:780px) and (max-width:1279px) {
