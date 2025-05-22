@@ -97,7 +97,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
     padding: 20px;
     font-family: "DM Sans", sans-serif;
     flex-wrap: wrap;
@@ -107,7 +107,7 @@ main{
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 5px;
+    gap: 8px;
 
 }
 
