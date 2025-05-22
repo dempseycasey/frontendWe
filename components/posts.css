@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+/* EVENT */
+
+.post{
+    width: 350px;
+    padding: 10px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    border-radius: 5px;
+    
+}
+
+.header-post{
+    height: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: "DM Sans", sans-serif;
+}
+
+.pp{
+    height: 25px;
+    width: 25px;
+    border-radius: 5px;
+    background: red;
+}
+
+.title-post{
+    font-family: "DM Sans", sans-serif;
+    font-size: 22px;
+}
+
+.content-post{
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+}
+
+.footer-post{
+    font-family: "DM Sans", sans-serif;
+}
+
+.btn{
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 5px;
+}
