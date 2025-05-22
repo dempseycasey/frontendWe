@@ -140,7 +140,11 @@ section.events{
 .container-events{
     height: 150px;
     width: 100%;
-    background-color: red;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    gap: 5px;
 }
 
 main{
@@ -256,4 +260,25 @@ main{
     }
 
 
+}
+
+.event{
+    display: inline-flex;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0.338);
+    padding: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.container-event-title span{
+    font-family: "DM Sans", sans-serif;
+}
+
+
+
+.container-date-event span{
+    font-size: 10px;
+    font-family: "DM Sans", sans-serif;
 }
